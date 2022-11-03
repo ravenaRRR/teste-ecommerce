@@ -4,11 +4,11 @@ import Item from "../Item";
 
 const CartItems = () => {
     return (
-       <footer>
-        <ul>
-          <Item />        <Item />         <Item /> 
+       <footer className="footer">
+        
+          <Item />   
 
-        </ul>
+        
        </footer>
     )
 }

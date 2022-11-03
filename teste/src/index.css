@@ -1,4 +1,7 @@
 /*Import fonte Poppins */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
@@ -18,25 +21,39 @@ code {
 }
 
 main{
-  margin-top: 15vh;
+  margin-top: 5vh;
 
   width: 100%;
   min-height: 50vh;
-
+height: 1000px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #F8F7F7;
   z-index: 1;
 }
-@media (max-width: 520px) {
+
+@media (max-width: 850px) {
   main{
     width: 100%;
+    height: 2500px;
     min-width: 10vh;
     min-height: 70vh;
   
   }
 }
+
+
+@media  (min-width: 851px) and ( max-width: 1200px) {
+  main{
+    width: 100%;
+    height: 1500px;
+    min-width: 10vh;
+    min-height: 70vh;
+  
+  }
+}
+
 
 .courses-section{
 max-width: 900px;
@@ -45,18 +62,20 @@ width: 90%;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 justify-content: space-between;
-gap: 6rem;}
+gap: 6rem;
+margin-bottom: 50px;
+}
 
-@media (max-width: 800px) {
+@media (max-width: 1150px) {
   .courses-section{
-    max-width: 900px;
+    max-width: 500px;
     grid-template-columns: 1fr 1fr;
 
   }
 }
   
 
-@media (max-width: 520px) {
+@media (max-width: 850px) {
   .courses-section{
     max-width: 200px;
     grid-template-columns: 1fr ;
@@ -79,7 +98,7 @@ flex-direction: column;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
 }
 
-@media (max-width: 520px) {
+@media (max-width: 850px) {
   .card{
     width: 70%;
   padding: 2rem;
@@ -123,4 +142,46 @@ object-fit: cover;
   font-family: Poppins;
 font-size: 1rem;
 margin: 1rem 0;
+}
+
+
+.footer{
+  margin-top: 80px;
+display: flex;
+align-items: center;
+height: 300px;
+width: 100%;
+background-color: rgb(53, 53, 53);
+}
+
+.Title{
+  color: rgb(33, 33, 141);
+  margin: 50px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-bottom:0px ;
+  font-size: 50px;
+}
+
+.item-logo{
+ width: 150px;
+ margin-left: 100px;
+ border-radius: 50%;
+}
+
+.verde{
+  color:green;
+}
+
+h3.sub-title{
+font-size: 12px;
+font-family: Poppins;
+}
+
+h2.title-value{
+
+  font-size: 20px;
+  font-family: Poppins;
+  margin: 5px;
+
 }
